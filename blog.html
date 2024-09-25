@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#F9F7F3',
+                        'btn': '#B4F461'
+                    },
+                    fontFamily: {
+                        lexend: ['Lexend'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <a id="logo"
+        class="container mx-auto md:hidden py-4 flex justify-center items-center gap-4 text-base lg:text-xl font-semibold"
+        href="#">
+        <img class="w-8 lg:w-12 " src="assets/logo.png" alt="">
+        Donate Bangladesh
+    </a>
+    <header id="header" class="header sticky left-0 top-0">
+        <nav class="nav  bg-primary shadow-sm">
+            <div class="container mx-auto ">
+                <div class="all-content mx-3 py-3 lg:py-6 flex justify-between items-center">
+
+                    <button id="home-btn" onclick="blog()" class="btn bg-btn text-base lg:text-xl px-8 font-semibold">Home</button>
+                    <a id="logo" class="logo hidden md:flex items-center gap-4 text-base lg:text-xl font-semibold"
+                        href="#">
+                        <img class="w-8 lg:w-12" src="assets/logo.png" alt="">
+                        Donate Bangladesh
+                    </a>
+                    <div id="coin" class="coin text-neutral-500 flex items-center gap-2 text-base lg:text-xl font-semibold" href="#">
+                        <img src="assets/coin.png" alt="">
+                        <p><span id="blog-coin-amount" class="coin-amount">5500</span> BDT</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </nav>
+        
+        <!-- navbar end  -->
+    </header>
+    <main id="main" class="main py-8">
+      <div class="container mx-auto">
+        <div class="all-content mx-3">
+          <h1 class="text-2xl font-extrabold mb-8">Important FAQ</h1>
+          <div class="faq-section">
+            <div class="collapse collapse-arrow bg-white border-2 border-neutral-100">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the DOM in JavaScript ?</div>
+              <div class="collapse-content">
+                <p>The DOM (Document Object Model) represents an HTML document as a structured tree, allowing manipulation via JavaScript.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border-2 border-neutral-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">How do you select an element by its ID in JavaScript ?</div>
+              <div class="collapse-content">
+                <p>Use <span class="font-bold">document.getElementById('elementId')</span> to select an element with a specific ID in the DOM.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border-2 border-neutral-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium"> How can you create a new HTML element using JavaScript?</div>
+              <div class="collapse-content">
+                <p>Use <span class="font-bold">document.createElement('tagName')</span> to create a new HTML element, like div or p, in the DOM.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border-2 border-neutral-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">What does innerHTML do in JavaScript?</div>
+              <div class="collapse-content">
+                <p>innerHTML sets or retrieves the HTML content inside an element, including child elements and text.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border-2 border-neutral-100">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">How do you remove an element from the DOM in JavaScript ?</div>
+              <div class="collapse-content">
+                <p>Use <span class="font-bold">element.remove()</span> to remove an element from the DOM.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
+ </body>
+ </html>
